@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --sidebar-bg-color: #0ea5e9;
+    --sidebar-font-color: #fafafa;
+}
+
 /* Main Grid */
 
 .main-grid {
@@ -30,8 +35,53 @@ header {
 /* Sidebar */
 
 .sidebar {
-    border: 1px solid black;
     grid-area: sb;
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-font-color);
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard svg {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--sidebar-font-color);
+
+}
+
+.dashboard p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.navigation,
+.branding {
+    padding: 20px;
+}
+
+.navigation ul,
+.branding ul {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navigation li,
+.branding li {
+    padding: 10px;
+}
+
+.nav-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--sidebar-font-color);
 }
 
 /* Projects */
