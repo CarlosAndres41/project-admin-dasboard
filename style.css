@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    border: 1px solid black;
+}
+
+/* Sidebar */
+
+.sidebar {
+    border: 1px solid black;
+}
+
+/* Projects */
+
+.projects {
+    border: 1px solid black;
+}
+
+/* Announcements */
+
+.announcements {
+    border: 1px solid black;
+}
+
+/* Trending */
+
+.trending {
+    border: 1px solid black;
+}
