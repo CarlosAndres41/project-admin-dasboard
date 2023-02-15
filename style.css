@@ -4,32 +4,52 @@
     margin: 0;
 }
 
+/* Main Grid */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "sb hd hd hd hd"
+        "sb pr pr pr an"
+        "sb pr pr pr an"
+        "sb pr pr pr tr"
+        "sb pr pr pr tr"
+    ;
+}
+
 /* Header */
 
 header {
     border: 1px solid black;
+    grid-area: hd;
 }
 
 /* Sidebar */
 
 .sidebar {
     border: 1px solid black;
+    grid-area: sb;
 }
 
 /* Projects */
 
 .projects {
     border: 1px solid black;
+    grid-area: pr;
 }
 
 /* Announcements */
 
 .announcements {
     border: 1px solid black;
+    grid-area: an;
 }
 
 /* Trending */
 
 .trending {
     border: 1px solid black;
+    grid-area: tr;
 }
