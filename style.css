@@ -180,7 +180,8 @@ input[type="search"] {
 
 /* Projects */
 
-.projects {
+.projects,
+.announcements {
     background-color: var(--projects-bg-color);
     grid-area: pr;
     padding-top: 40px;
@@ -188,7 +189,8 @@ input[type="search"] {
     padding-right: 10px;
 }
 
-.projects h3 {
+.projects h3,
+.announcements h3 {
     font-weight: 500;
 }
 
@@ -236,8 +238,34 @@ input[type="search"] {
 /* Announcements */
 
 .announcements {
-    border: 1px solid black;
     grid-area: an;
+}
+
+.announcement-cards {
+    margin-top: 15px
+}
+
+.announcement-card {
+    border-radius: 5px;
+    background-color: var(--cards-bg-color);
+    padding: 6px;
+    box-shadow: 3px 3px 2px 1px #cbd5e1;
+}
+
+.announcement-card:nth-child(1),
+.announcement-card:nth-child(2) {
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.announcement-card p {
+    font-size: 0.6rem;
+    color: #94a3b8;
+}
+
+.announcement-card h3 {
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
 }
 
 /* Trending */
