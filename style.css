@@ -311,3 +311,10 @@ li i {
     color: #94a3b8;
     font-size: 0.7rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .actions-area {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
