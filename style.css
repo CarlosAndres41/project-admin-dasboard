@@ -22,15 +22,16 @@
 .main-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
         "sb hd hd hd hd"
         "sb pr pr pr an"
         "sb pr pr pr an"
         "sb pr pr pr tr"
         "sb pr pr pr tr"
+        "sb pr pr pr tr"
     ;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* Header */
@@ -38,7 +39,7 @@
 header {
     grid-area: hd;
     background-color: var(--header-bg-color);
-    padding: 0px 80px 0px 40px;
+    padding: 0px 80px 10px 40px;
 }
 
 .search-user {
@@ -172,6 +173,10 @@ input[type="search"] {
     padding: 10px;
 }
 
+li i {
+    margin-right: 15px;
+}
+
 .nav-item svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -243,7 +248,7 @@ input[type="search"] {
 }
 
 .announcement-cards {
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .announcement-card,
@@ -275,7 +280,7 @@ input[type="search"] {
 .trending {
     background-color: var(--projects-bg-color);
     grid-area: tr;
-    padding-top: 0px;
+    padding-top: 18px;
     padding-left: 20px;
     padding-right: 10px;
 }
